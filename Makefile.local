@@ -1,0 +1,7 @@
+all: http-200 http-204
+
+http-200: http.c httpserver.h
+	musl-gcc -o http-200 -DSTATUS_CODE=200 -s -O2 -static http.c
+
+http-204: http.c httpserver.h
+	musl-gcc -o http-204 -DSTATUS_CODE=204 -s -O2 -static http.c
