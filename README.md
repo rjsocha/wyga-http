@@ -8,7 +8,7 @@ docker run --rm -p 80:8000 wyga/http:204
 
 ## Why
 
-I using this as default (catch all) backend for traefik deployments. Same as nginx config:
+I'm using this as default (catch all) backend for traefik deployments. Same as nginx config:
 
 ```
 server {
