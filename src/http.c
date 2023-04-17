@@ -11,7 +11,7 @@
 void handle_request(struct http_request_s* request) {
   struct http_response_s* response = http_response_init();
   http_request_connection(request, HTTP_CLOSE);
-  http_response_header(response, "Content-Type", "application/octet-stream");
+  http_response_header(response, "Content-Type", "text/plain");
   http_response_status(response, STATUS_CODE);
   http_respond(request, response);
 }
